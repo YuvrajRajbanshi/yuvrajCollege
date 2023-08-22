@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* nav-bar designing start from Here */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+.nav-bar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar nav ul li {
+  list-style: none;
+  padding: 20px;
+}
+.nav-bar nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #1a1a1a;
+  position: relative;
+}
+.nav-bar li a:hover,
+.nav-bar li a.active {
+  color: #088178;
+}
+.nav-bar li a.active::after,
+.nav-bar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 5px;
+}
+
+.text {
+  background-image: url(/img/hero4.png);
+  height: 90vh;
+  width: 90%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 80px;
+}
+.text h1 {
+  font-size: 50px;
+  color: #088178;
+}
+.text h2 {
+  font-size: 35px;
+  padding: 5px;
+}
+.text h4 {
+  font-size: 25px;
+  padding: 5px;
+}
+.text p {
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* from here suggestion bar 
+ */
+.text button {
+  background-image: url(/img/button.png);
+  padding: 14px 34px 14px 65px;
+  border: none;
+  background-color: transparent;
+  color: #088178;
+  font-weight: bold;
+  font-size: 18px;
+}
+.featured {
+  height: 30vh;
+  width: 100%;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.feature-pic {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.feature-pic button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  background: #272703;
+  color: white;
+  border-radius: 6px;
+  font-weight: bolder;
+}
+
+/*From here Featured Products*/
+
+.new-product {
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: red; */
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+.text-container h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.text-container p {
+  padding-top: 4px;
+  font-weight: bold;
+}
+.shirt-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.kapda {
+  height: 375px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.star {
+  display: flex;
+}
+
+.kapda img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.feature-text {
+  padding: 10px 10px;
+}
+.feature-text h4 {
+  color: #f5cba7;
+  font-weight: bolders;
+}
+
+/* again copy paste from here */
+.text-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+/* firt banner  */
+
+.banner {
+  background-image: url("/img/banner/b2.jpg");
+  width: 100%;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lekhak {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lekhak h5 {
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+.lekhak h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+span {
+  color: red;
+}
+.lekhak button {
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.lekhak button:hover {
+  background: #088178;
+  color: white;
+}
+
+/* arivals start from here */
+.whole-arrivals {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.new-arrivals h1 {
+  font-size: 60px;
+}
+.new-arrivals h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.all-pic img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.all-pic {
+  margin-top: 20px;
+  height: 375px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Arrivals-text {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.whole-pic {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rect {
+  width: 580px;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #088178; */
+}
+.first-box {
+  background-image: url(/img/banner/b17.jpg);
+  background-position: center;
+  background-size: cover;
+  min-width: 580px;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second-box {
+  background-image: url(/img/banner/b17.jpg);
+  background-position: center;
+  background-size: cover;
+  min-width: 580px;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* the footer star from here itself */
+
+.fotter {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+  font-family: asd;
+}
+.first-column {
+  margin-left: 50px;
+}
+.logo img {
+  width: 74px;
+  height: 74px;
+}
+.year {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.app-logos img {
+  width: 24px;
+  height: 24px;
+}
+.contact {
+  margin-top: 30px;
+}
+.app-logos {
+  margin-top: 30px;
+}
+.app-logos img {
+  padding: 10px;
+}
+.fourth-column-pic img:nth-child(1) {
+  width: 122px;
+  height: 22px;
+}
+.fourth-column-pic img:nth-child(2) {
+  width: 30px;
+  height: 22px;
+}
+.fourth-column-pic img:nth-child(3) {
+  width: 94px;
+  height: 22px;
+}
+.play-store img {
+  width: 36px;
+  height: 36px;
+}
+.second-column a {
+  text-decoration: none;
+  padding: 20px;
+  font-family: asd;
+}
+.third-column a {
+  text-decoration: none;
+  padding: 30px;
+  font-family: asd;
+}
+.fourth-column-pic {
+  padding: 20px;
+}
+.fourth-column-pic img {
+  padding: 10px;
+}
+.play-store {
+  padding: 20px;
+}
+
+footer {
+  background: pink;
+  padding: 20px;
+}

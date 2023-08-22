@@ -1,0 +1,21 @@
+.shpBnr {
+  background: url(/img/banner/b1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+}
+
+.shpBnr h1 {
+  color: white;
+  text-align: center;
+  padding-top: 125px;
+}
+.fifty {
+  font-size: 50px;
+}
+.jiocin {
+  width: 40px;
+  mix-blend-mode: darken;
+}
